@@ -23,7 +23,7 @@ public class VerbaSaudeController {
   private final RegistrarVerbaSaude registrarVerbaSaude;
 
   @PostMapping(produces = APPLICATION_JSON_VALUE)
-  @ApiOperation(value = "Registrar verba para saúde")
+  @ApiOperation(value = "Registrar verba para saúde covid19")
   @ResponseStatus(OK)
   public ResponseEntity registrarVerbaSaude(
       @RequestBody @Valid final VerbaSaudeResource verbaSaudeResource) {
