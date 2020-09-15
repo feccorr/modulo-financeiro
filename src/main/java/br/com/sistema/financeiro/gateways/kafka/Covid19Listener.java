@@ -15,7 +15,7 @@ public class Covid19Listener {
 
   private final Covid19DatabaseGateway covid19DatabaseGateway;
 
-  // Consumuindo o topico saude-covid
+  // Apontar o listerner para o topico 'saude-covid-input'
   @KafkaListener(topics = "saude-covid-input")
   public void lerMensagem(final String mensagem) {
     final Covid19Resource covid19Resource = converterMensagem(mensagem);
